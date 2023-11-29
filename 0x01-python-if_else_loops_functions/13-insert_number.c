@@ -13,11 +13,11 @@
 
 listint_t *insert_node(listint_t **head, int number)
 {
-	listint_t *crnt = *first;
+	listint_t *crnt = *head;
 	listint_t *latest = NULL;
 	listint_t *temporary = NULL;
 
-	if (!first)
+	if (!head)
 	{
 		return (NULL);
 	}
@@ -30,10 +30,10 @@ listint_t *insert_node(listint_t **head, int number)
 	latest->n = number;
 	latest->next = NULL;
 
-	if (!*first || (*first)->n > number)
+	if (!*head || (*head)->n > number)
 	{
-		latest->next = *first;
-		return (*first = latest);
+		latest->next = *head;
+		return (*head = latest);
 	}
 	else
 	{

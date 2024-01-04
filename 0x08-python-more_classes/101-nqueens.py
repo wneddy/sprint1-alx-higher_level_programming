@@ -6,7 +6,7 @@ are arranged so they cannot capture one another.
 """
 
 
-def check_safe(board, row, col):
+def check_safe(brd, row, colm):
     """
     Checks if position is safe - meaning no other queen can attack it
 

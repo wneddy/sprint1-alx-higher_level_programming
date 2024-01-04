@@ -6,8 +6,7 @@ class Rectangle:
     """rectangle representation.
 
     Attributes:
-        number_of_instances (int): The no. of Rectangle instances.
-        print_symbol (any): The symbol used for string representation.
+        number_of_instances (int): The no of Rectangle instances.
     """
 
     number_of_instances = 0
